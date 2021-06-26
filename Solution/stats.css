@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** Start of Stats CSS **/
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    background-color:  hsl(233, 47%, 7%);
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.66rem;
+    background-color: hsl(244, 38%, 16%);
+    text-align: center;
+    max-width: 500px;
+    margin: 5.86rem 1.66rem;
+    
+
+}
+
+.content {
+    text-align:center;
+    min-width: 100%;
+    
+}
+
+h1 {
+    font-family: 'Inter', sans serif;
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+    line-height: 2.93rem;
+    margin: 1.66rem;
+}
+
+.accent {
+    color:  hsl(277, 64%, 61%);
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color:  hsla(0, 0%, 100%, 0.75);
+    line-height: 1.66rem;
+    margin: 1.66rem;
+}
+
+li {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    line-height:1.66rem;
+    letter-spacing: 0.0666rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: 1.66rem;
+}
+
+.number {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.image {
+    display: block;
+    min-width: 100%;
+    overflow: hidden;
+    background-color: hsl(277, 64%, 61%);
+    border-top-left-radius: 0.66rem;
+    border-top-right-radius: 0.66rem;
+    
+}
+
+img {
+    width: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    display: block;
+}
+
+@media screen and (min-width:500px) {
+    
+    
+    .card {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-content: center;
+        margin: 11.8rem 11rem;
+        
+    }
+
+    .content {
+        text-align: left;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .image {
+        border-top-left-radius: 0rem;
+        border-bottom-right-radius: 0.66rem;
+        height: 100%;
+    }
+}
+
